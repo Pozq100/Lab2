@@ -1,5 +1,6 @@
 
 def get_userinput():
+    print("Input a list of numbers in the format of e.g. 12,34,54,1")
     num_list = input().split(",")
     for i in range(len(num_list)):
         num_list[i] = int(num_list[i])
@@ -13,7 +14,7 @@ def calculate_average(num_list):
     return
 
 def calculate_min_max(num_list):
-    print(f"Min,Max", num_list[0], num_list[len(num_list) - 1])
+    print(f"Min,Max:", num_list[0], num_list[len(num_list) - 1])
     return
 def sort_numlist(num_list):
     return sorted(num_list)
